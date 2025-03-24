@@ -3,6 +3,7 @@ package br.senai.sp.jandira.calculoPoligonos.dao;
 import java.util.Scanner;
 
 import br.senai.sp.jandira.calculoPoligonos.model.Circunferencia;
+import br.senai.sp.jandira.calculoPoligonos.ui.Menu;
 
 public class CircunferenciaDao {
 	
@@ -15,11 +16,13 @@ public class CircunferenciaDao {
 		Circunferencia circunferencia1 = new  Circunferencia();
 		
 		System.out.println("Digite o valor do raio: ");
-		
-		
-		
 		circunferencia1.setRaio(leitor.nextDouble());
+		
+		
+		
 		circunferencia1.exibirDados();
+		
+		Menu.retornar();
 		
 	}
 
